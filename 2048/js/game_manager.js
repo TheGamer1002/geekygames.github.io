@@ -17,7 +17,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 // Restart the game
 GameManager.prototype.restart = function () {
   this.storageManager.clearGameState();
-  var power = prompt("What number should the tiles be multiplied by when the collide? For the original 2048, enter 2.");
+  power = prompt("What number should the tiles be multiplied by when the collide? For the original 2048, enter 2.");
   this.actuator.continueGame(); // Clear the game won/lost message
   this.setup();
 };
